@@ -1,0 +1,138 @@
+.container {
+    max-width: 1200px;
+    background: url(./img/bcg.jpg);
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin: 0 auto;
+}
+
+.call {
+    color: #e76122;
+    font-size: 35px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.adress {
+    color: #ceced0; 
+    font-size: 14px;
+    text-align: center;
+}
+
+.social__list {
+    display: flex;
+    justify-content: center;
+}
+
+.social__item {
+    list-style: none;
+    text-align: center;
+}
+
+.pinterest {
+    padding-top: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+.send {
+    color: #e76122;
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.discription {
+    color: #ceced0; 
+    font-style: italic;
+    font-size: 12px;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    width: 770px;
+    margin: 0 auto;
+}
+
+.left__btn {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    width: 370px;
+    color: #777777;
+    background-color: #fff;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.right__texarea {
+    font-family: 'Open Sans', sans-serif;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    width: 370px;
+    height: 91%;
+    color: #777777;
+    background-color: #fff;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.learn-more {
+    display: flex;
+    padding: 17px 35px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    background: #5dbdb1;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    outline: none;
+    border: none;
+}
+
+.learn-more:hover {
+    opacity: .9;
+    cursor: pointer;
+    border: 1px solid #e76122;
+}
+
+.discription {
+    text-transform: uppercase;
+    position: relative;
+}
+
+.discription::before {
+content: "";
+width: 20px;
+height: 100px;
+background: #e76122 url(./img/Shape-62-copy-8.jpg);
+}
+
+.discription span {
+    font-size: 10px;
+    vertical-align: top;
+}
+
+.upp {
+    display: flex;
+    background: url(./img/Без-имени-1.jpg) no-repeat;
+    margin: 0 auto;
+    outline: none;
+    border: none;
+    width: 15px;
+    height: 20px;
+}
+
+.upp {
+    cursor: pointer;
+    opacity: .8;
+}
