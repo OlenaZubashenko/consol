@@ -4,10 +4,11 @@ body {
 }
 
 .container {
-    max-width: 1200px;
-    padding-top: 100px;
+    max-width: 1280px;
+    padding-top: 149px;
     padding-bottom: 33px;
     background: url(./img/bcg.jpg);
+    background-size: cover;
      margin: 0 auto;    
 }
 
@@ -17,6 +18,7 @@ body {
     font-weight: 100;
     text-align: center;
     text-transform: uppercase;
+    margin: 0;
 }
 
 .adress {
@@ -25,6 +27,7 @@ body {
     color: #ceced0; 
     font-size: 14px;
     text-align: center;
+    margin: 0;
 }
 
 .social__list {
@@ -70,6 +73,7 @@ body {
     justify-content: space-between;
     width: 770px;
     margin: 0 auto;
+    padding-top: 15px;
 }
 
 .left__btn {
@@ -110,7 +114,7 @@ body {
     background: #5dbdb1;
     border-radius: 5px;
     text-transform: uppercase;
-    margin: 20px auto;
+    margin: 7px auto;
     outline: none;
     border: none;
     transition: .4s;
@@ -127,7 +131,7 @@ body {
     width: 880px;
     height: 10px;
     background: url(./img/Shape-62-copy-8.jpg) no-repeat;
-    margin: 95px auto 15px auto;
+    margin: 112px auto 15px auto;
   
 }
 
