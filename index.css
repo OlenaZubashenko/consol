@@ -1,19 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     max-width: 1200px;
+    padding-top: 100px;
+    padding-bottom: 33px;
     background: url(./img/bcg.jpg);
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Open Sans Condensed', sans-serif;
-    margin: 0 auto;
+     margin: 0 auto;    
 }
 
 .call {
     color: #e76122;
-    font-size: 35px;
+    font-size: 45px;
+    font-weight: 100;
     text-align: center;
     text-transform: uppercase;
 }
 
 .adress {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
     color: #ceced0; 
     font-size: 14px;
     text-align: center;
@@ -22,6 +30,7 @@
 .social__list {
     display: flex;
     justify-content: center;
+    padding: 0;
 }
 
 .social__item {
@@ -38,14 +47,21 @@
 .send {
     color: #e76122;
     font-size: 25px;
+    font-weight: 100;
     text-align: center;
     text-transform: uppercase;
 }
 
+.discription-wrapper {
+    max-width: 770px;
+    margin: 0 auto;
+}
+
 .discription {
     color: #ceced0; 
+    font-family: 'Open Sans', sans-serif;
     font-style: italic;
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
 }
 
@@ -94,30 +110,37 @@
     background: #5dbdb1;
     border-radius: 5px;
     text-transform: uppercase;
-    margin: 0 auto;
+    margin: 20px auto;
     outline: none;
     border: none;
+    transition: .4s;
 }
 
 .learn-more:hover {
-    opacity: .9;
     cursor: pointer;
-    border: 1px solid #e76122;
+    background: #36a094;
+    color: #e76122;
 }
 
-.discription {
+.underline {
+    justify-content: center;
+    width: 880px;
+    height: 10px;
+    background: url(./img/Shape-62-copy-8.jpg) no-repeat;
+    margin: 95px auto 15px auto;
+  
+}
+
+.text-bottom {
     text-transform: uppercase;
-    position: relative;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    text-align: center;
+    font-weight: normal;
 }
 
-.discription::before {
-content: "";
-width: 20px;
-height: 100px;
-background: #e76122 url(./img/Shape-62-copy-8.jpg);
-}
-
-.discription span {
+.text-bottom span {
     font-size: 10px;
     vertical-align: top;
 }
@@ -130,9 +153,53 @@ background: #e76122 url(./img/Shape-62-copy-8.jpg);
     border: none;
     width: 15px;
     height: 20px;
+    transition: .4s;
 }
 
-.upp {
+.upp:hover {
     cursor: pointer;
     opacity: .8;
+}
+
+@media (max-width: 840px) {
+    .form {
+        display: flex;
+        flex-direction: column;
+   }
+   .form__left, .form__right {
+    margin: 0 auto;
+   }
+    .right__texarea {
+        height: 150px;
+        margin: 0 auto;
+    }
+    .underline {
+        width: 600px;
+    }
+}
+
+@media (max-width: 380px) {
+    .container {
+        background: rgb(65, 75, 85);
+    }
+    .call {
+        font-size: 25px;
+    }
+    .send {
+        font-size: 20px;
+    }
+    .form {
+        width: 100%;
+        padding: 4px;
+    }
+    .left__btn {
+        width: 320px;
+    }
+    .right__texarea {
+        width: 320px;
+        height: 100px;
+    }
+    .underline {
+        width: 300px;
+    }
 }
