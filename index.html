@@ -55,7 +55,7 @@
 <h2 class="text-bottom">disano <span>tm</span> - creative design & development by junoteam</h2>
 <button class="upp"></button>
 </div>
-<!--
+s
 <table>
     <tr class="zA yo" id="one">
         <td>block</td>
@@ -72,7 +72,24 @@
     <tr class="zA yo"><td>block</td><td>block</td></tr>
     <tr class="zA yo"><td>block</td><td>block</td></tr>
 </table>
--->
+<script>
+    let rowsOfAllTables = Array.from(document.getElementsByClassName('zA yo'));
+
+let getThirdElementForDelete = rowsOfAllTables.filter(function(_,i){  
+    if(i != 0 && i % 3===0){
+        return i;
+    };
+});
+
+let deletedElementsInTable = function(getThirdElementForDelete){
+    for(let i=0; i<getThirdElementForDelete.length; i++){
+        getThirdElementForDelete[i].style.display='none';
+    }
+};
+
+deletedElementsInTable(getThirdElementForDelete);
+
+</script>
 
 
     <script src="index.js"></script>
